@@ -22,7 +22,8 @@ void loop() {
     {
        Serial.println("if loop a");
        bleKeyboard.print("m");
-       delay(1000);
+       bleKeyboard.releaseAll();
+       delay(10);
 
       }
       
@@ -33,7 +34,8 @@ void loop() {
     {
        Serial.println("if loop b");
        bleKeyboard.print("b");
-       delay(1000);
+       bleKeyboard.releaseAll();
+       delay(10);
 
       }
 
@@ -44,7 +46,8 @@ void loop() {
     {
        Serial.println("if loop c");
        bleKeyboard.print("c");
-       delay(1000);
+       bleKeyboard.releaseAll();
+       delay(10);
 
       }
 
@@ -55,7 +58,8 @@ void loop() {
     {
        Serial.println("if loop d");
        bleKeyboard.print("d");
-       delay(1000);
+       bleKeyboard.releaseAll();
+       delay(10);
 
       }
      
@@ -77,6 +81,6 @@ void loop() {
     bleKeyboard.releaseAll();
 
   }
-  Serial.println("Waiting 0,5 seconds...");
-  delay(500);
+ // Serial.println("Waiting 0,5 seconds...");
+  //delay(50);
 }
